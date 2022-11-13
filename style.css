@@ -1,7 +1,6 @@
+/*No utilizar imports en las fuentes de CSS, no son buenas practicas*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-
