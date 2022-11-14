@@ -1,0 +1,86 @@
+/*NOTAS_E_INFO*/
+
+/*No utilizar imports en las fuentes de CSS, no son buenas practicas*/
+
+/* Posicionamiento 
+      --> static, absolute, relative, fixed,sticky */
+
+/* Modelo de caja (Box model)
+      --> margin, border, padding, content   */
+
+/* Tipografía 
+      --> tipos, tamaños de fuente, etc      */
+/* Estilos visuales
+      --> box-shadow, border-radius, gradient, etc */
+
+/*Utilizaremos las variables de colores dentro del archivo ROOT*/
+:root {
+  /*Variables de color*/
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d4;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warn-black: #201e1c;
+  --warn-black-secondary: #282623;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #ffffff;
+}
+
+/* "*{}" Selector universar aterisco*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*La etiqueta html con un font-size: 62.5%;, para trabajar con rem en medidas de 10px*/
+html {
+  font-size: 62.5%;
+  /*Reglas de estilos CSS de google fonts */
+  font-family: "DM Sans", sans-serif;
+  /*en la seccion 3 llevara la fuente Inter*/
+  /*font-family: "Inter", sans-serif;*/
+}
+header {
+  /* position: relative; puedo posicionar el elemento relativamente, donde quiera*/
+  position: relative;
+  /*Mostramos los elementos tanto uno al lado del otro en vertical como en horizontal, siempre tendra dimencion*/
+  display: flex;
+  /*Mostramos en columnas la propiedad flex*/
+  flex-direction: column;
+  /*Justificamos todo el contenido */
+  justify-content: center;
+  /*Ocupamos el 100% del ancho*/
+  width: 100%;
+  /*Ancho minimo*/
+  min-width: 320px;
+  /*Altura */
+  height: 334px;
+  /*Texto aliniado*/
+  text-align: center;
+}
+
+/*etiqueta de logo, img, utilizaremos especificidad*/
+/* vamos a llamar la etiqueta dentro de header que en este caso es img*/
+header img {
+  /*Que tanto se aleja el elemento de derecha a izquierda*/
+  width: 150px;
+  /*que tanto se ealeja de abajo hacia arriba*/
+  height: 24px;
+  /*Que marguen tienen de arriba hacia abajo*/
+  margin-top: 60px;
+  /*Se utiliza para aliniar si nuestro parent, es display flex*/
+  align-self: center;
+}
+
+.header--tittle-container {
+  /*El porcentaje es proporcional a el with y el height*/
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 40px;
+  text-align: center;
+  align-self: center;
+}
