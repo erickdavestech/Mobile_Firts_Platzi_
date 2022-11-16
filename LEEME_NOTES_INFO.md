@@ -135,18 +135,27 @@ text-align: center;
 align-self: center;
 }
 
-## Parte 11: 
+## Parte 11 -- General Lineal Gradient Background:
 
-
-/_NOTAS_E_INFO_/
-/_No utilizar imports en las fuentes de CSS, no son buenas practicas_/
+/\_NOTAS*E_INFO*/
+/\_No utilizar imports en las fuentes de CSS, no son buenas practicas\_/
 
 /\_ Posicionamiento
 --> static, absolute, relative, fixed,styki/
 
-# Static positioned elements are not affected by the top, bottom, left, and right properties.
+# Static positaioned elements are not ffected by the top, bottom, left, and right properties.
 
 An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
+
+
+
+
+
+/\* **\*\***\*\***\*\*** NOTA \***\*\*\*\*\*\*\***\*\*\*\***\*\*\*\*\*\*\***/
+/_-_ Selector Specificity: (0, 1, 1) _-_ lo cual indica que es mas especifico/
+/_Para ser mas especificos se utilizara la etiqueta H1 dentro de la clase
+.header--tittle-container para que a futuro si implementamos librerias y demas
+frameworks que hagan uso specifico de la etiqueta H1, no tengamos conflitos en nuestro estilos _/
 
 ---
 
