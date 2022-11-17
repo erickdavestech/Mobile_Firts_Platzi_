@@ -155,3 +155,67 @@ header img {
   margin-left: 10px;
   background-image: url("../assets/images/Vector_section_2_flecha_abajo_black.svg");
 }
+
+/*Main_Section 1*/
+
+/*Estilizamos main*/
+main {
+  width: 100%;
+  /*Si se hace mas pequeño no sera menos de 320px*/
+  min-width: 320px;
+  /*Esta en auto por que el contenido define el la altura*/
+  height: auto;
+  background-color: var(--off-white);
+}
+/*Estilizamos La Section*/
+/**/
+.main_section_1 {
+  width: 100%;
+  height: auto;
+  /*El contendido se aleja hacia abajo*/
+  padding-top: 80px;
+  /*Se le aumenta el relleno de abajo por 30px*/
+  padding-bottom: 30px;
+  /*Se alinea el texto al centro*/
+  text-align: center;
+}
+
+/*Contenedor de titulos H1 y p*/
+.main_section_1 .main_section_1--titulo {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+/*Background Imagen*/
+.main_section_1 .background__img {
+  width: 250px;
+  height: 200px;
+  margin: 0 auto;
+  /*Separamos la imagen de la etiqueta h2*/
+  margin-bottom: 50px;
+  background-image: url("../assets/images/bitcoin_image_section_2.svg");
+  /*La imagen tratara de cubrir todo el espacio*/
+  background-size: cover;
+  background-position: center;
+  /*En caso de hacerce mas grande la imagen no se duplicara intentando rellenar el espacio*/
+  background-repeat: no-repeat;
+}
+
+.main_section_1 h2 {
+  /*Separamos el h2 de la imagen*/
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.main_section_1 p {
+  /*Separamos el parrafo de la etiqueta h2*/
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
+}
