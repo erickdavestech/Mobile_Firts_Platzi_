@@ -11,12 +11,17 @@ $ git remote add origin https://github.com/erickdavestech/example.git
 $ git push -u origin main
 
 # Subir archivos
--\_ 
-Añade todos los archivos
+
+--\_
+
+# Añade todos los archivos
+
 $ git add .
 
-Añade el comentario y acepta los cambios locales de los archivos
+# Añade el comentario y acepta los cambios locales de los archivos
+
 $ git commit -m "first commit"
 
-Añade sube los archivos a la rama main eleguir cualquier nombre para otra rama
+# Añade sube los archivos a la rama main eleguir cualquier nombre para otra rama
+
 $ git push -u origin main

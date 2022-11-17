@@ -143,13 +143,43 @@ align-self: center;
 /\_ Posicionamiento
 --> static, absolute, relative, fixed,styki/
 
+## Parte 11 --Posicionar el buttom de la etiqueta a link
+
+.header--tittle-container .header--buttom {
+/_Utilizaremos posicion adsoluta, podemos utilizar top-bottom, left,right,_/
+position: absolute;
+/_Realiza el calculo de posicion segun Left, right, top , bottom lo ajusta en porcentaje,
+si es muy grande se debe de redimencional ejemplo 50% - 118px _/
+left: calc(50% - 118px);
+/_Alejamos el boton de la parte superior a 270px de el top _/
+top: 270px;
+/_Muestra en bloque_/
+display: block;
+margin-top: 35px;
+padding: 15px;
+width: 229px;
+height: 48px;
+background-color: var(--off-white);
+/_Parte del sombreado_/
+/_Agregamos sombra_/
+box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+/_retiramos los bordes_/
+border: none;
+/_Agregamos borde al radio de 5px_/
+border-radius: 5px;
+/_Aumentamos la fuente a 1.4rem, a pixeles son 14px por 62.5% de la etiqueta html predefinida_/
+font-size: 1.4rem;
+/_Peso de la fuente, _/
+font-weight: bold;
+/_retiramos la decoracion del texto_/
+text-decoration: none;
+/_Damos un color negro, de nuestros coloress en :root{}_/
+color: var(--warn-black-secondary);
+}
+
 # Static positaioned elements are not ffected by the top, bottom, left, and right properties.
 
 An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
-
-
-
-
 
 /\* **\*\***\*\***\*\*** NOTA \***\*\*\*\*\*\*\***\*\*\*\***\*\*\*\*\*\*\***/
 /_-_ Selector Specificity: (0, 1, 1) _-_ lo cual indica que es mas especifico/
