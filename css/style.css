@@ -25,6 +25,15 @@
   --grey: #bababa;
   --off-white: #faf8f7;
   --just-white: #ffffff;
+  --greydouble: #757575;
+  /*Variables de color*/
+
+  /*Iconos de las cards cuatro en total, reloj, ojo, dollar, check*/
+  --reloj: url("../assets/images/Vector_section_2_reloj_card_1.svg");
+  --eye: url("../assets/images/Vector_section_2_eye_card_2.svg");
+  --dollar: url("../assets/images/Vector_section_2_dollar_sign_card_3.svg");
+  --checkmark: url("../assets/images/Vector_section_2_check_card_4.svg");
+  /*Iconos de las cards cuatro en total, reloj, ojo, dollar, check*/
 }
 
 /* "*{}" Selector universar aterisco*/
@@ -40,7 +49,7 @@ html {
   /*Reglas de estilos CSS de google fonts */
   font-family: "DM Sans", sans-serif;
   /*en la seccion 3 llevara la fuente Inter*/
-  /*font-family: "Inter", sans-serif;*/
+  font-family: "Inter", sans-serif;
 }
 header {
   /* position: relative; puedo posicionar el elemento relativamente, donde quiera*/
@@ -217,5 +226,359 @@ main {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.6rem;
-  color: #757575;
+  /*Este color no esta en las custom variables, por que solo se utilizara para este estilo*/
+  color: var(--greydouble);
 }
+
+/*Agregando los estilos a las tablas */
+.main_section_1--main-currency-table {
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 360px;
+  /*No aplica margen de arriba a abajo y de isquierda a derecha calcula el margin que tiene  que colocar*/
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+/*Titulo de la tabla monedas*/
+.main_section_1--main-currency-table
+  .main_section_1--main-currency-table--titulo {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--bitcoin-orange);
+}
+
+/*Estilando la tabla*/
+
+.main_section_1--currency-table--container {
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.main_section_1--currency-table--container table {
+  width: 100%;
+  height: 100%;
+}
+
+/*Estilando los datos de tabla td*/
+.main_section_1--currency-table--container td {
+  /*Separamos las tablas*/
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--grey);
+  /*Color de fondo blanco*/
+  background-color: var(--just-white);
+}
+
+/*Lado isquierdo-ARRIBA*/
+/*Redondiar las essquinas de las tablas*/
+.main_section_1--currency-table--container .table__top-left {
+  border-radius: 15px 0 0 0;
+}
+/*Lado derecho-ARRIBA*/
+.main_section_1--currency-table--container .table__top-right {
+  border-radius: 0 15px 0 0;
+}
+/*abajo-ISQUIERDO*/
+.main_section_1--currency-table--container .table__buttom-left {
+  border-radius: 0 0 0 15px;
+}
+/*abajo-DERECHO*/
+.main_section_1--currency-table--container .table__bottom-right {
+  border-radius: 0 0 15px 0;
+}
+/*Estilizamnos los precios*/
+/*Primer precio-Estilos-A la derecha*/
+.main_section_1--currency-table--container .table__right {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.7rem;
+  color: var(--greydouble);
+}
+
+/*Estilisamos las fechas al lado de los span de esta manera */
+.main_section_1--currency-table--container .signo_flecha_abajo {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-image: url("../assets/images/Vector_section_2_flecha_abajo_naranja.svg");
+  background-size: cover;
+}
+
+.main_section_1--currency-table--container .signo_arriba_verde {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-image: url("../assets/images/Vector_section_2_flecha_arriba_verde.svg");
+  background-size: cover;
+}
+
+.main_section_1--currency-table--container .signo_flecha_abajo_abajo_verde {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-image: url("../assets/images/Vector_section_2_flecha_abajo_naranja.svg");
+  background-size: cover;
+}
+
+.main_section_1--currency-table--container
+  .signo_flecha_abajo_abajo_abajo_verde {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-image: url("../assets/images/Vector_section_2_flecha_abajo_naranja.svg");
+  background-size: cover;
+}
+/*Estilamos el contenedor*/
+.main_section_1--currency-table--date {
+  width: 190px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: var(--soft-orange);
+  border-radius: 8px;
+}
+.main_section_1--currency-table--date p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--warm-black);
+}
+
+/*Section 2*/
+.main-product-detail {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--warn-black);
+}
+
+.main-product-detail .product-detail--batata-logo {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  top: -10px;
+  left: calc(50% - 20px);
+  background-image: url("../assets/images/Vector_section_3_batatabit_logo.svg");
+}
+
+.main-product-detail .product-detail--title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.main-product-detail .product-detail--title h2 {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+.main-product-detail .product-detail--title p {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+/**************************************/
+/*Tarjetas de productos cards */
+
+/*Card One*/
+.product-cards--container_card_one {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product-detail--card_card_one .clock {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: var(--reloj);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product--card-title__card_one {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.product--card-body__card_one {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+/*Card Two*/
+
+.product-cards--container_card_two {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card_card_two .eye {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: var(--eye);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product--card-title__card_two {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.product--card-body__card_two {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+/*Card Threee*/
+
+.product-cards--container_card_three {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card_card_three .dollar {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: var(--dollar);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product--card-title___card_three {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.product--card-body___card_three {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+/*Card Four*/
+.product-cards--container_card_four {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card_card_four .check {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-image: var(--checkmark);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product--card-title__card_four {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.product--card-body___card_four {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+/*Section 3*/
+/*Esto es una seccion comodin*/
+
+.bitcoin-img-contenedor {
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image: url("../assets/images/imagen_section_3_comodin.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.bitcoin-img-contenedor .bitcoin-img-contenedor--titulo {
+  padding-top: 60px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+/*Section 4*/
+/*Planes y demas*/
