@@ -22,8 +22,13 @@
   <!-- ***************************************************************************************************************-->
   <!-- Titulo Del Proyecto Web-->
   <title>MobileFirts</title>
-  <!-- Css link-->
-  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Css link--Stylos iniciales, mobiles-->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Css link--Stylos TABLES-->
+  <!-- Media es para decirle al navegador que si esta en un dispositivo de mayor a 930px
+        Que descargue el tablet.css y no el iniciar por que es de movil-->
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
+
 </head>
 
 <body>
@@ -178,45 +183,44 @@
         <h2>Creamos un producto sin comparación.</h2>
         <p>Confiable y diseñado para su uso diario.</p>
       </div>
+
+      <!--   -->
       <!-- Card 1-->
-      <section class="product-cards--container_card_one">
-        <article class="product-detail--card_card_one">
+      <section class="product-cards--container">
+        <article class="product-detail--card_card">
           <span class="clock"></span>
-          <p class="product--card-title__card_one">Tiempo real</p>
-          <p class="product--card-body__card_one">Nuestro API toma información minuto a minuto sobre las tasas que más
+          <p class="product--card-title__card">Tiempo real</p>
+          <p class="product--card-body__card">Nuestro API toma información minuto a minuto sobre las tasas que más
             determinan
             el comportamiento.</p>
         </article>
       </section>
       <!-- Card 2-->
-      <section class="product-cards--container_card_two">
-        <article class="product-detail--card_card_two">
+      <section class="product-cards--container">
+        <article class="product-detail--card_card">
           <span class="eye"></span>
-          <p class="product--card-title__card_two">No hay tasas escondidas</p>
-          <p class="product--card-body__card_two">Ni en la compra o al momento de exit, Batabit siempre te muestra el
+          <p class="product--card-title__card">No hay tasas escondidas</p>
+          <p class="product--card-body__card">Ni en la compra o al momento de exit, Batabit siempre te muestra el
             costo real
             de lo que estás adquiriendo.</p>
         </article>
       </section>
-
       <!-- Card 3-->
-
-      <section class="product-cards--container_card_three">
-        <article class="product-detail--card_card_three">
+      <section class="product-cards--container">
+        <article class="product-detail--card_card">
           <span class="dollar"></span>
-          <p class="product--card-title___card_three">Compara monedas</p>
-          <p class="product--card-body___card_three">No más rumores, con Babtabit sabrás el valor real de cada moneda en
+          <p class="product--card-title__card">Compara monedas</p>
+          <p class="product--card-body__card">No más rumores, con Babtabit sabrás el valor real de cada moneda en
             el mercado
             actual.</p>
         </article>
       </section>
-
       <!-- Card 4-->
-      <section class="product-cards--container_card_four">
-        <article class="product-detail--card_card_four">
+      <section class="product-cards--container">
+        <article class="product-detail--card_card">
           <span class="check"></span>
-          <p class="product--card-title__card_four">Información confiable</p>
-          <p class="product--card-body___card_four">Nuestras fuentes están 100% verificadas y continuamos auditando su
+          <p class="product--card-title__card">Información confiable</p>
+          <p class="product--card-body__card">Nuestras fuentes están 100% verificadas y continuamos auditando su
             contenido
             mientras se actualizan.</p>
         </article>
@@ -275,7 +279,6 @@
     <!-- Section _4_del main *******************************************************************-->
     <!-- Fin de Main-->
   </main>
-
 
   <!-- Pie de Pagina-->
   <footer>

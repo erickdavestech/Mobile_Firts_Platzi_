@@ -413,19 +413,19 @@ main {
 /**************************************/
 /*Tarjetas de productos cards */
 
-/*Card One*/
-.product-cards--container_card_one {
+/*Card One********************************************************************/
+.product-detail--card_card {
   width: 90%;
   min-width: 288px;
   max-width: 400px;
-  min-height: 150px;
+  height: 150px;
   margin: 15px auto;
   padding: 15px;
   background-color: var(--black);
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
-.product-detail--card_card_one .clock {
+.product-detail--card_card .clock {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -436,36 +436,7 @@ main {
   background-repeat: no-repeat;
 }
 
-.product--card-title__card_one {
-  margin-bottom: 15px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  line-height: 1.8rem;
-  color: var(--just-white);
-}
-
-.product--card-body__card_one {
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.8rem;
-  color: #808080;
-}
-
-/*Card Two*/
-
-.product-cards--container_card_two {
-  width: 90%;
-  min-width: 288px;
-  max-width: 400px;
-  min-height: 150px;
-  margin: 15px auto;
-  padding: 15px;
-  background-color: var(--black);
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-}
-
-.product-detail--card_card_two .eye {
+.product-detail--card_card .eye {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -476,35 +447,7 @@ main {
   background-repeat: no-repeat;
 }
 
-.product--card-title__card_two {
-  margin-bottom: 15px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  line-height: 1.8rem;
-  color: var(--just-white);
-}
-
-.product--card-body__card_two {
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.8rem;
-  color: #808080;
-}
-/*Card Threee*/
-
-.product-cards--container_card_three {
-  width: 90%;
-  min-width: 288px;
-  max-width: 400px;
-  min-height: 150px;
-  margin: 15px auto;
-  padding: 15px;
-  background-color: var(--black);
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-}
-
-.product-detail--card_card_three .dollar {
+.product-detail--card_card .dollar {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -515,35 +458,7 @@ main {
   background-repeat: no-repeat;
 }
 
-.product--card-title___card_three {
-  margin-bottom: 15px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  line-height: 1.8rem;
-  color: var(--just-white);
-}
-
-.product--card-body___card_three {
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.8rem;
-  color: #808080;
-}
-
-/*Card Four*/
-.product-cards--container_card_four {
-  width: 90%;
-  min-width: 288px;
-  max-width: 400px;
-  min-height: 150px;
-  margin: 15px auto;
-  padding: 15px;
-  background-color: var(--black);
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-}
-
-.product-detail--card_card_four .check {
+.product-detail--card_card .check {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -554,7 +469,7 @@ main {
   background-repeat: no-repeat;
 }
 
-.product--card-title__card_four {
+.product--card-title__card {
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -562,12 +477,14 @@ main {
   color: var(--just-white);
 }
 
-.product--card-body___card_four {
+.product--card-body__card {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: #808080;
 }
+
+/*Card One********************************************************************/
 
 /*Section 3*/
 /*Esto es una seccion comodin*/
@@ -711,7 +628,7 @@ main {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url("./assets/icons/orange-right-arrow.svg");
+  background-image: url("../assets/images/Vector_section_4_cards_escoje_este_flecha_naranja_derecha.svg");
   vertical-align: text-bottom;
 }
 /*Fin plan card*/
